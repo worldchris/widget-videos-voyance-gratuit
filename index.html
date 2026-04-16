@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intégration du Widget Vidéos - Intuition Libre</title>
+    <meta name="description" content="Découvrez comment intégrer gratuitement notre moteur de recherche de vidéos sur l'intuition et l'ancrage énergétique sur votre site web. Widget responsive et conforme RGPD.">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+        :root { --accent: #8e44ad; --dark: #2c3e50; --light: #f8f9fa; --border: #e9ecef; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background: var(--light); color: #333; line-height: 1.6; }
+        .header { background: var(--dark); color: #fff; padding: 60px 20px; text-align: center; }
+        .header h1 { margin: 0 0 15px 0; font-size: 2.5em; }
+        .header p { font-size: 1.2em; color: #ced4da; max-width: 600px; margin: 0 auto; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 350px; gap: 40px; }
+        @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
+        
+        .content { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h2 { color: var(--dark); border-bottom: 2px solid var(--border); padding-bottom: 10px; margin-top: 0; }
+        h3 { color: var(--accent); margin-top: 30px; }
+        p { margin-bottom: 20px; text-align: justify; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        
+        .code-block { background: #282c34; color: #abb2bf; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Courier New', Courier, monospace; font-size: 0.9em; line-height: 1.5; border: 1px solid #1e2227; }
+        .copy-btn { display: inline-block; background: var(--accent); color: #fff; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 15px; transition: 0.3s; }
+        .copy-btn:hover { background: #732d91; }
+        
+        .demo-panel { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; height: fit-content; position: sticky; top: 20px; }
+        .demo-panel h3 { margin-top: 0; color: var(--dark); }
+        
+        .footer { text-align: center; padding: 40px 20px; color: #666; font-size: 0.9em; margin-top: 40px; border-top: 1px solid var(--border); }
+        .footer a { color: var(--accent); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>Widget Vidéos : Intuition & Ancrage</h1>
+    <p>Enrichissez votre site web avec un moteur de recherche de ressources bienveillantes pour le développement personnel.</p>
+</header>
+
+<div class="container">
+    <main class="content">
+        <h2>Pourquoi intégrer ce widget sur votre site ?</h2>
+        <p>En tant que webmestre, vous cherchez constamment à apporter de la valeur ajoutée à vos visiteurs. Ce widget gratuit vous permet d'intégrer un moteur de recherche vidéo dédié à l'éveil intuitif, à l'ancrage énergétique et au développement personnel.</p>
+        
+        <p>Les contenus proposés sont construits dans une démarche purement pragmatique et bienveillante. Il n'y a ici aucune approche sectaire, dogmatique ou médicale. L'objectif est d'offrir des pistes de réflexion autonomes et des outils de recentrage pour affronter les défis du quotidien moderne.</p>
+
+        <h3>Les avantages techniques</h3>
+        <ul>
+            <li><strong>100% Gratuit et Open Source :</strong> Aucune inscription requise, aucune clé API complexe à configurer.</li>
+            <li><strong>Conforme RGPD :</strong> Le widget utilise les URL `youtube-nocookie.com` pour garantir le respect de la vie privée de vos utilisateurs.</li>
+            <li><strong>Totalement Responsive :</strong> Grâce à son conteneur adaptatif, il s'intègre parfaitement dans vos barres latérales (sidebars) ou au cœur de vos articles, sur mobile comme sur ordinateur.</li>
+            <li><strong>Léger et Rapide :</strong> Il ne ralentit pas le temps de chargement de vos pages web.</li>
+        </ul>
+
+        <h3>Code d'intégration (Copier-Coller)</h3>
+        <p>Copiez simplement le code HTML ci-dessous et collez-le à l'endroit exact où vous souhaitez voir apparaître le widget sur votre page :</p>
+        
+        <div class="code-block" id="widgetCode">
+&lt;div style="width: 100%; max-width: 350px; height: 500px; margin: 0 auto;"&gt;
+    &lt;iframe 
+        src="https://videos-voyance.intuitionlibre.com/widget.html" 
+        width="100%" 
+        height="100%" 
+        frameborder="0" 
+        style="border-radius: 15px; overflow: hidden; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"
+        title="Moteur de recherche de vidéos Intuition et Ancrage"
+        allow="autoplay; fullscreen"
+    &gt;&lt;/iframe&gt;
+&lt;/div&gt;</div>
+        
+        <button class="copy-btn" onclick="copyCode()">Copier le code dans le presse-papiers</button>
+        <span id="copyMsg" style="color: green; margin-left: 15px; display: none; font-weight: bold;">Code copié !</span>
+
+        <h3>Nos formats numériques</h3>
+        <p>Pour aller plus loin, nous proposons également des manuels pratiques détaillés. Ces ressources sont exclusivement éditées au format numérique. Montés et structurés sur Google Doc, nos ebooks garantissent la génération de fichiers ePub d'une compatibilité absolue, pour une lecture fluide et sans distraction sur toutes les liseuses.</p>
+    </main>
+
+    <aside class="demo-panel">
+        <h3>Aperçu en direct</h3>
+        <div style="width: 100%; max-width: 350px; height: 500px; margin: 0 auto;">
+            <iframe 
+                src="https://videos-voyance.intuitionlibre.com/widget.html" 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                style="border-radius: 15px; overflow: hidden; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"
+                title="Moteur de recherche de vidéos Intuition et Ancrage"
+                allow="autoplay; fullscreen"
+            ></iframe>
+        </div>
+        <p style="font-size: 0.85em; color: #888; margin-top: 15px;">Testez la barre de recherche (ex: "intuition").</p>
+    </aside>
+</div>
+
+<footer class="footer">
+    <p>Outil créé et maintenu par <a href="https://videos-voyance.intuitionlibre.com/" target="_blank" rel="noopener noreferrer">Intuition Libre</a> | <a href="https://www.christophe-voyance.com/" target="_blank" rel="noopener noreferrer">Christophe Voyance</a></p>
+    <p style="margin-top: 10px;">
+        Partager ce projet : 
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://videos-voyance.intuitionlibre.com/&hashtag=%23intuition" target="_blank" rel="noopener noreferrer" style="background: #1877f2; color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.9em; margin-left: 10px;">Partager sur Facebook</a>
+    </p>
+</footer>
+
+<script>
+    function copyCode() {
+        const codeText = `<div style="width: 100%; max-width: 350px; height: 500px; margin: 0 auto;">
+    <iframe 
+        src="https://videos-voyance.intuitionlibre.com/widget.html" 
+        width="100%" 
+        height="100%" 
+        frameborder="0" 
+        style="border-radius: 15px; overflow: hidden; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"
+        title="Moteur de recherche de vidéos Intuition et Ancrage"
+        allow="autoplay; fullscreen"
+    ></iframe>
+</div>`;
+        navigator.clipboard.writeText(codeText).then(() => {
+            const msg = document.getElementById('copyMsg');
+            msg.style.display = 'inline';
+            setTimeout(() => { msg.style.display = 'none'; }, 2500);
+        });
+    }
+</script>
+
+</body>
+</html>
